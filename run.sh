@@ -13,6 +13,9 @@ sudo docker build -t $image_name .
 #run image as container with --rm flag
 sudo docker run --rm --name $container_name -d -p 3306:3306 $image_name
 
+#check if container is running
+sudo docker ps
+
 #check logs
 sudo docker logs $container_name
 
